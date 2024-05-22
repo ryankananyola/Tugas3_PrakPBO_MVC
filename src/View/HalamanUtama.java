@@ -2,6 +2,7 @@ package View;
 
 import View.Dosen.ViewDataDosen;
 import View.Mahasiswa.ViewDataMahasiswa;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,6 +30,8 @@ public class HalamanUtama extends JFrame implements ActionListener{
         setLayout(null);
         setLocationRelativeTo(null);
         
+        getContentPane().setBackground(new Color(25, 150, 150));
+               
         add(header);
         header.setFont(new Font("Arial", Font.BOLD, 18));
         header.setBounds(25,25,330,35);
@@ -72,6 +75,7 @@ public class HalamanUtama extends JFrame implements ActionListener{
                 System.exit(0);
             }
         } catch(Exception error){
+            //error handling ketika xampp belum dinyalakan, jadi tidak bisa mengakses halaman selanjutnya
             JOptionPane.showMessageDialog(null,"Database belum terhubung, \n tolong nyalakan XAMPP");
             System.exit(0);
         }

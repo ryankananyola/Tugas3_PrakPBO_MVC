@@ -3,6 +3,7 @@ package View.Dosen;
 import Controller.ControllerDosen;
 import Model.Dosen.ModelDosen;
 import View.HalamanUtama;
+import java.awt.Color;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -38,6 +39,8 @@ public class ViewDataDosen extends JFrame{
         
         setLayout(null);
         setLocationRelativeTo(null);
+        
+        getContentPane().setBackground(new Color(152,251,152));
 
         add(header);
         add(scrollPane);

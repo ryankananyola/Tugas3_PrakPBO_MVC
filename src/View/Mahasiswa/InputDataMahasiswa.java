@@ -1,6 +1,7 @@
 package View.Mahasiswa;
 
 import Controller.ControllerMahasiswa;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -24,6 +25,8 @@ public class InputDataMahasiswa extends JFrame{
         
         setLayout(null);
         setLocationRelativeTo(null);
+        
+        getContentPane().setBackground(new Color(238,130,238));
 
         add(header);
         add(labelInputNama);

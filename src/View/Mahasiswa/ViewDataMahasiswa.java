@@ -4,6 +4,7 @@ package View.Mahasiswa;
 import Controller.ControllerMahasiswa;
 import Model.Mahasiswa.ModelMahasiswa;
 import View.HalamanUtama;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -42,7 +43,8 @@ public class ViewDataMahasiswa extends JFrame {
         setLayout(null);
         setLocationRelativeTo(null);
         
-
+        getContentPane().setBackground(new Color(255, 215, 0));
+        
         add(header);
         add(scrollPane);
         add(tombolTambah);
